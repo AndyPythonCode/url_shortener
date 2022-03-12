@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "url_shortener"
+version = "0.1.0"
+description = ""
+authors = ["AndyPythonCode <andyarciniegas24@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+uvicorn = "^0.17.6"
+fastapi = "^0.75.0"
+motor = "^2.5.1"
+python-decouple = "^3.6"
+
+[tool.poetry.dev-dependencies]
+autopep8 = "^1.6.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
