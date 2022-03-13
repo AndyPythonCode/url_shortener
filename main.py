@@ -1,4 +1,5 @@
 import config
+import uvicorn
 from fastapi import FastAPI
 
 app = FastAPI(**config.API_METADATA)
@@ -14,3 +15,6 @@ async def startup():
     print("""
     Go to: http://localhost:8000/
     """)
+
+if __name__ == "__main__":
+    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
